@@ -1,8 +1,15 @@
 <script>
-	import Weather from "../components/+weather.svelte";
-
+	import LeftSection from '../components/Left/LeftSection.svelte';
+	import RightSection from '../components/right/RightSection.svelte';
 </script>
-<div class="flex items-center justify-between bg-white">
-    <div class="left w-[30%] min-h-screen"><Weather/></div>
-    <div class="right w-[70%] bg-gray-100 min-h-screen">Right</div>
-</div>
+
+<main>
+	<div class="min-w-full min-h-screen flex items-center justify-between">
+		<div class="w-[25%] h-screen">
+			<LeftSection />
+		</div>
+		<div class="w-[75%] h-screen bg-gray-50">
+			<RightSection />
+		</div>
+	</div>
+</main>
