@@ -7,11 +7,11 @@
 	import WIndSpeed from './WIndSpeed.svelte';
 </script>
 
-<div class="lg:flex lg:flex-col lg:justify-evenly lg:mx-28 lg:mt-5">
+<div class="lg:flex lg:flex-col lg:justify-evenly 2xl:mx-28 lg:mx-14 lg:mt-5 lg:gap-0">
 	<div>
-		<h2 class="text-gray-800 text-3xl font-semibold">Today's Highlights</h2>
+		<h2 class="lg:text-gray-800 2xl:text-3xl lg:text-2xl font-semibold">Today's Highlights</h2>
 	</div>
-	<div class="lg:grid lg:grid-flow-row lg:grid-cols-3 gap-5 lg:mt-10">
+	<div class="lg:grid lg:grid-flow-row lg:grid-cols-3 2xl:gap-5 lg:gap-4 2xl:mt-10 lg:mt-5">
 		<UvIndex />
 		<WIndSpeed />
 		<SunriseSunset />

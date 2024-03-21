@@ -3,7 +3,7 @@
 	import CitySearch from './CitySearch.svelte';
 </script>
 
-<div class="flex flex-col w-full h-screen">
-	<div class="h-[15%]"><CitySearch /></div>
-	<div class="h-[85%]"><CurrentWeather /></div>
+<div class="lg:flex lg:flex-col lg:w-full lg:h-screen ">
+	<div class="lg:h-[15%]"><CitySearch /></div>
+	<div class="lg:h-[85%]"><CurrentWeather /></div>
 </div>

@@ -4,11 +4,11 @@
 </script>
 
 <main>
-	<div class="min-w-full min-h-screen flex items-center justify-between">
-		<div class="w-[25%] h-screen">
+	<div class="lg:w-full lg:h-screen lg:flex">
+		<div class="lg:w-[25%] lg:h-screen">
 			<LeftSection />
 		</div>
-		<div class="w-[75%] h-screen bg-[#f6f6f8]">
+		<div class="lg:w-[75%] lg:h-screen lg:bg-[#f6f6f8]">
 			<RightSection />
 		</div>
 	</div>
