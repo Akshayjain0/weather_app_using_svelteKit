@@ -23,8 +23,8 @@
 
 			nextFiveDaysData.push({
 				day: daysOfWeek[date.getDay()],
-				temp: forecast?.main?.temp,
-				feels_like: forecast?.main?.feels_like,
+				temp: forecast?.main?.temp.toFixed(1),
+				feels_like: forecast?.main?.feels_like.toFixed(1),
 				weather_description: forecast?.weather?.[0]?.description,
 				icon: forecast?.weather?.[0]?.icon === undefined ? "10d": forecast?.weather?.[0]?.icon
 			});
