@@ -13,7 +13,7 @@
 	const fetchCurrentWeather = async (city: string) => {
 		try {
 			const { data } = await axios(
-				`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=API_KEY&units=metric`
+				`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=886f9f7a35e65a64a10bef848d59f3a5&units=metric`
 			);
 			weatherData.set(data);
 			// console.log(data);
@@ -27,7 +27,7 @@
 	const fetchForecastData = async (city: string) => {
 		try {
 			const { data } = await axios(
-				`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=API_KEY&units=metric`
+				`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=886f9f7a35e65a64a10bef848d59f3a5&units=metric`
 			);
 			forecastWeather.set(data);
 			// console.log(data);
@@ -66,24 +66,24 @@
 	};
 </script>
 
-<div class="lg:flex lg:items-center lg:justify-center lg:h-full">
+<div class="flex items-center justify-center h-full lg:mt-0 mt-5">
 	<label for="citySearch" class="relative">
 		<i
-			class="fa-solid fa-magnifying-glass lg:text-gray-500 lg:absolute lg:top-3.5 lg:left-3.5 2xl:top-4 2xl:left-5"
+			class="fa-solid fa-magnifying-glass text-gray-500 absolute lg:top-3.5 lg:left-3.5 2xl:top-4 2xl:left-5 top-4 left-4"
 		></i>
 		<input
-			class="2xl:py-2 2xl:pl-11 lg:focus:caret-gray-400 lg:rounded-full lg:appearance-none lg:border-2 lg:border-green-200 lg:focus:outline-none lg:focus:border-green-400 lg:focus:border-opacity-80 lg:text-gray-500 lg:shadow-green-200 lg:shadow-md lg:focus:shadow-none lg:py-1.5 lg:pl-9"
+			class="2xl:py-2 2xl:pl-11 max-lg:px-9 py-2 focus:caret-gray-400 rounded-full appearance-none border-2 border-green-200 focus:outline-none focus:border-green-400 focus:border-opacity-80 text-gray-500 shadow-green-200 shadow-md focus:shadow-none lg:py-1.5 lg:pl-9"
 			type="text"
 			on:input={changeCity}
 			on:keypress={handleKeyPress}
-			placeholder="Type city..."
+			placeholder="Type City or PIN Code"
 			id="citySearch"
 		/>
 	</label>
 
 	<button
 		on:click={() => fetchDataFromBothAPIs($cityName)}
-		class="lg:bg-green-300 lg:text-white 2xl:py-2.5 2xl:px-5 lg:px-4 lg:py-2 lg:hover:bg-green-400 lg:ml-3 lg:rounded-full lg:shadow-md lg:shadow-green-200"
+		class="bg-green-300 text-white 2xl:py-2.5 2xl:px-5 lg:px-4 lg:py-2 px-4 py-2 hover:bg-green-400 ml-3 rounded-full shadow-md shadow-green-200"
 		><i class="fa-solid fa-arrow-right"></i></button
 	>
 </div>
